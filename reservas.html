@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservas.css">
+    <title>El Rincón del Café - Reservas</title>
+</head>
+<body>
+    <!-- ENCABEZADO PRINCIPAL-->
+    <header class="header">
+        <img src="./imagenes/logo.svg" alt="Logo de la Cafetería"/>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="carta.html">Menú</a> 
+            <a href="reservas.html">Reservas</a>
+        </nav>
+        <div class="redes-sociales">
+           <a href="www.instagram.com">
+               <img src="imagenes/instagram.png" alt="instagram">
+            </a>
+            <a href="www.whatsapp.com">
+               <img src="imagenes/whatsappp.png" alt="whatsapp">
+            </a>
+        </div>
+     </header>
+    <main class="formulario">
+        <p>Únicamente serán aceptadas las reservaciones que fueron hechas de lunes a viernes en el horario de 9 a 18. Fuera de este horario favor de comunicarse a nuestro whatsapp.</p>
+        <form action="reservas.html" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="mail">Mail:</label>
+                <input type="text" name="mail" id="mail">
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" name="telefono" id="telefono">
+                <br>
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+                <br>
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora">
+                <br>
+                <label for="Cantidad">Cantidad de Personas:</label>
+                <input type="text" name="Cantidad" id="Cantidad">
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    
+    <!-- PIE  DE PAGINA-->
+    <footer class="footer">
+        <span>HORARIOS</span>
+        <h4>Lunes a Viernes de 9:00 a 20:00 | Sábados de 9:00 a 13:00 </h4>
+        <h4>Av. General Paz 210 - Córdoba</h4>
+        <h5>Copyright © 2024 rincon del Café</h5>
+    </footer>
+</body>
+</html>
