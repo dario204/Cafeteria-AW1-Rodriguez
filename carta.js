@@ -159,11 +159,11 @@ function renderizarHTML(arregloProductos) {
         const productoHTML = `
             <li class="items">
                 <img src="${producto.imagen}" alt="${producto.nombre}">
-                <div class="contenido">
-                    <h4 class="titulo">${producto.nombre}</h4>
+                <div class="box">
+                    <h4 class="title">${producto.nombre}</h4>
                     <p class="descripcion">${producto.descripcion}</p>
                 </div>
-                <div class="precio">${producto.precio}</div>
+                <div class="price">${producto.precio}</div>
             </li>
         `;
 

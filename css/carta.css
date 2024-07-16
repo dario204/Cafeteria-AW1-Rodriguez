@@ -61,17 +61,17 @@ p{
     display: flex;
     gap: 10px;
 }
-.redes-sociales a {
+.redes a {
     margin-left: auto;
 }
-.redes-sociales img{
+.redes img{
     width: 70px;
     height: 70px;
 }
 /* *******************************************************
  MAIN
 ******************************************************** */
-.main{
+.main-carta{
     max-width: auto; 
     background-color: #fff;
     border-radius: 8px;
@@ -81,7 +81,7 @@ p{
     
     
 }
-.detalles{
+.details{
     margin-bottom: 20px;
 }
 
@@ -93,7 +93,7 @@ p{
     background-color: #eee;
     border-radius: 4px;
 }
-.lista{
+.list{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -111,7 +111,7 @@ p{
     border-radius: 8px;
 }
 
-.titulo{
+.title{
     margin: 0;
     font-size: 1.2em;
     color: #333;
@@ -125,13 +125,11 @@ p{
     margin-bottom: 10px;
     color: #444;
 }
-.precio{
+.price{
     font-size: 1.2em;
     color: #333;
     margin-left: auto;
 }
-
-
 /* *******************************************************
  FOOTER
 ******************************************************** */
