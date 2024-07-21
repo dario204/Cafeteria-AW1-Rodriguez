@@ -1,0 +1,140 @@
+{
+ "productos":[
+   {
+        "id": 1,
+        "nombre": "espresso",
+        "precio": 2000,
+        "imagen": "./imagenes/1602012253938.webp",
+        "descripcion": "Shot de Café",
+        "tipo": "caliente"
+    },
+    {
+        "id": 2,
+        "nombre": "latte",
+        "precio": 2000,
+        "imagen": "./imagenes/Latte.webp",
+        "descripcion": "Shot de Espresso, leche, capa de espuma",
+        "tipo": "caliente"
+    },
+    {
+        "id": 3,
+        "nombre": "capuccino",
+        "precio": 2100,
+        "imagen": "./imagenes/Capuccino.webp",
+        "descripcion": "Crema, espresso, chocolate, espuma de leche",
+        "tipo": "caliente"
+    },
+    {
+        "id": 4,
+        "nombre": "Flat White",
+        "precio": 2000,
+        "imagen": "./imagenes/Flat.webp",
+        "descripcion": "Doble shot de espresso y leche, capa fina de espuma",
+        "tipo": "caliente"
+    },
+    {
+        "id": 5,
+        "nombre": "Moka",
+        "precio": 2000,
+        "imagen": "./imagenes/Mocaccino.webp",
+        "descripcion": "chocolate, shot de espresso, leche, chocolate rallado",
+        "tipo": "caliente"
+    },
+    {
+        "id": 6,
+        "nombre": "Te",
+        "precio": 2000,
+        "imagen": "./imagenes/TE.webp",
+        "descripcion": "Consultar opciones",
+        "tipo": "caliente"
+    },
+    {
+        "id": 7,
+        "nombre": "Ice Latte",
+        "precio": 2000,
+        "imagen": "./imagenes/Iced-Latte.webp",
+        "descripcion": "Hielo, short de espresso, leche",
+        "tipo": "fria"
+    },
+    {
+        "id": 8,
+        "nombre": "Frapuccino de Caramelo",
+        "precio": 2000,
+        "imagen": "./imagenes/Frapuccino.webp",
+        "descripcion": "Caramelo, café, leche, hielo",
+        "tipo": "fria"
+    },
+    {
+        "id": 9,
+        "nombre": "Te Frio",
+        "precio": 2000,
+        "imagen": "./imagenes/te-frio.jpg",
+        "descripcion": "",
+        "tipo": "fria"
+    },
+    {
+        "id": 10,
+        "nombre": "Chocolatada",
+        "precio": 2000,
+        "imagen": "./imagenes/chocolatada.jpg",
+        "descripcion": "",
+        "tipo": "fria"
+    },
+    {
+        "id": 11,
+        "nombre": "Croissant",
+        "precio": 2000,
+        "imagen": "./imagenes/croissant.jpg",
+        "descripcion": "",
+        "tipo": "dulce"
+    },
+    {
+        "id": 12,
+        "nombre": "Alfajor de Maicena",
+        "precio": 2000,
+        "imagen": "./imagenes/alfajor.jpg",
+        "descripcion": "",
+        "tipo": "dulce"
+    },
+    {
+        "id": 13,
+        "nombre": "Torta del dia",
+        "precio": 2000,
+        "imagen": "./imagenes/torta.webp",
+        "descripcion": "Porción de torta del día",
+        "tipo": "dulce"
+    },
+    {
+        "id": 14,
+        "nombre": "Brownie",
+        "precio": 2000,
+        "imagen": "./imagenes/brownie.webp",
+        "descripcion": "",
+        "tipo": "dulce"
+    },
+    {
+        "id": 15,
+        "nombre": "Avocado Toast",
+        "precio": 2000,
+        "imagen": "./imagenes/avocado.jpg",
+        "descripcion": "Pasta de queso crema con sésamo tostado, huevo y palta",
+        "tipo": "salada"
+    },
+    {
+        "id": 16,
+        "nombre": "Tostado de jamon y queso",
+        "precio": 2000,
+        "imagen": "./imagenes/tostado.jpg",
+        "descripcion": "",
+        "tipo": "salada"
+    },
+    {
+        "id": 17,
+        "nombre": "Scon salado",
+        "precio": 2000,
+        "imagen": "./imagenes/scon.jpg",
+        "descripcion": "",
+        "tipo": "salada"
+    }
+ ]
+}

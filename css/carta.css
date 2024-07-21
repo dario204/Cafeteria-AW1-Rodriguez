@@ -1,7 +1,7 @@
 /* *******************************************************
  GENERAL
 ******************************************************** */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,37 +11,37 @@ h1,
 h2,
 picture,
 figure,
-p{
+p {
     margin: 0;
     padding: 0;
     font-size: unset;
 }
-:root{
+:root {
     font-size: 18px;
-    font-family: 'Roboto', sans-serif; 
-    color: #2e2e2e; 
+    font-family: 'Roboto', sans-serif;
+    color: #2e2e2e;
     line-height: 1.8rem;
 }
 
 /* *******************************************************
  HEADER
 ******************************************************** */
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 10px;
     min-height: 100px;
-    background-color: #e3c69f; 
+    background-color: #e3c69f;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
-.header img{
+.header img {
     width: 80px;
 }
-.header nav{
+.header nav {
     display: flex;
     gap: 12px;
     margin-right: auto;
@@ -49,43 +49,71 @@ p{
 .header nav a {
     text-decoration: none;
     text-underline-offset: 0.5rem;
-    color: #503715; 
+    color: #503715;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-.header nav a:hover{
+.header nav a:hover {
     text-decoration: underline;
 }
-.redes-sociales{
+.redes-sociales {
     display: flex;
     gap: 10px;
 }
 .redes a {
     margin-left: auto;
 }
-.redes img{
+.redes img {
     width: 70px;
     height: 70px;
 }
+
 /* *******************************************************
  MAIN
 ******************************************************** */
-.main-carta{
-    max-width: auto; 
+.main-carta {
+    max-width: auto;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 20px;
     text-align: left;
-    
-    
 }
-.details{
+.filtres {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    align-items: center; /* Alinea verticalmente */
     margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-.summary{
+.filtres select,
+.filtres input {
+    font-size: 1em;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+}
+.filtres select {
+    width: 200px; /* Ajusta el ancho si es necesario */
+    max-width: 200px; /* Añadir esta línea para limitar el ancho máximo */
+}
+.filtres input {
+    font-size: 1em;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+    max-width: 300px; /* Define un ancho máximo más pequeño */
+    flex: 1; /* Permite que el input se ajuste en el espacio disponible */
+}
+
+.details {
+    margin-bottom: 20px;
+}
+.summary {
     font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
@@ -93,69 +121,70 @@ p{
     background-color: #eee;
     border-radius: 4px;
 }
-.list{
+.list,
+.lista {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.items{
+.items {
     display: flex;
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
-.items img{
+.items img {
     width: 200px;
     height: auto;
     margin-right: 20px;
     border-radius: 8px;
 }
-
-.title{
+.title {
     margin: 0;
     font-size: 1.2em;
     color: #333;
 }
-.descripcion{
+.descripcion {
     margin: 5px 0 0;
     color: #666;
 }
-.seccion{
+.seccion {
     font-size: 1.4em;
     margin-bottom: 10px;
     color: #444;
 }
-.price{
+.price {
     font-size: 1.2em;
     color: #333;
     margin-left: auto;
 }
+
 /* *******************************************************
  FOOTER
 ******************************************************** */
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10%; 
+    padding: 20px 10%;
     min-height: 120px;
-    background-color: #e3c69f; 
+    background-color: #e3c69f;
 }
-.footer span{
+.footer span {
     font-weight: bold;
-    color: #2e2e2e; 
+    color: #2e2e2e;
 }
-.footer h4{
-    margin-top: 5px; 
+.footer h4 {
+    margin-top: 5px;
     margin-bottom: 0;
     font-weight: normal;
-    color: #2e2e2e; 
+    color: #2e2e2e;
 }
-.footer h5{
+.footer h5 {
     display: block;
     font-size: 0.8em;
     margin-right: auto;
     margin-bottom: 5px;
-    color: #2e2e2e; 
+    color: #2e2e2e;
 }

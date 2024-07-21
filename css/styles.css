@@ -152,17 +152,20 @@ main h2 {
 /* *******************************************************
  CARTA
 ******************************************************** */
-.carta{
+.main-carta{
     max-width: auto; 
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 20px;
     text-align: left;
+    
+    
 }
 .details{
     margin-bottom: 20px;
 }
+
 .summary{
     font-size: 1.5em;
     font-weight: bold;
@@ -188,6 +191,7 @@ main h2 {
     margin-right: 20px;
     border-radius: 8px;
 }
+
 .title{
     margin: 0;
     font-size: 1.2em;

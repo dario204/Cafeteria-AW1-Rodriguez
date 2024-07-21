@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/carta.css">
-    <script defer src="carta.js"></script>
+    <script defer type="module" src="./js/carta.js"></script>
     <title>El Rincón del Café - Menú</title>
 </head>
 <body>
-   <!-- ENCABEZADO PRINCIPAL-->
-   <header class="header">
-    <img src="./imagenes/logo.svg" alt="Logo de la Cafetería"/>
-     <nav>
-         <a href="index.html">Inicio</a>
-         <a href="carta.html">Menú</a> 
-         <a href="reservas.html">Reservas</a>
-     </nav>
-     <div class="redes">
-         <a href="www.instagram.com">
-            <img src="imagenes/instagram.png" alt="instagram">
-         </a>
-         <a href="www.whatsapp.com">
-            <img src="imagenes/whatsappp.png" alt="whatsapp">
-         </a>
-     </div>
- </header>
+    <!-- ENCABEZADO PRINCIPAL-->
+    <header class="header">
+        <img src="./imagenes/logo.svg" alt="Logo de la Cafetería"/>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="carta.html">Menú</a> 
+            <a href="reservas.html">Reservas</a>
+        </nav>
+        <div class="redes">
+            <a href="www.instagram.com">
+                <img src="imagenes/instagram.png" alt="instagram">
+            </a>
+            <a href="www.whatsapp.com">
+                <img src="imagenes/whatsappp.png" alt="whatsapp">
+            </a>
+        </div>
+    </header>
+
     <!-- PRINCIPAL-->
     <main class="main-carta">
+        <!-- Añadir el selector de categoría y el campo de búsqueda aquí -->
+        <div class="filtres">
+            <select id="selector-categoria">
+                <option value="">Todas</option>
+                <option value="caliente">Bebidas Calientes</option>
+                <option value="fria">Bebidas Frías</option>
+                <option value="dulce">Dulces</option>
+                <option value="salada">Saladas</option>
+            </select>
+            <input type="text" id="buscador" placeholder="Buscar productos">
+        </div>
+
         <details class="details">
             <summary class="summary">Cafeteria</summary>
             <div>
@@ -34,51 +47,51 @@
                 <ul id="id-productos-calientes" class="list">
                     <li class="items">
                         <img src="imagenes/1602012253938.webp" alt="Espresso">
-                        <div >
+                        <div>
                             <h4 class="title">Espresso</h4>
                             <p class="descripcion">Shot de Café</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
                         <img src="imagenes/Latte.webp" alt="Latte">
-                        <div >
+                        <div>
                             <h4 class="title">Latte</h4>
-                            <p class="descripcion">Shot de Espresso, leche, capa de espuma.</p>
+                            <p class="descripcion">Shot de Espresso, leche, capa de espuma</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
                         <img src="imagenes/Capuccino.webp" alt="Cappuccino">
-                        <div >
-                            <h4 class="title">Cappuccino de la casa</h4>
-                            <p class="descripcion">Crema, espresso, chocolate, espuma de leche.</p>
+                        <div>
+                            <h4 class="title">Cappuccino</h4>
+                            <p class="descripcion">Crema, espresso, chocolate, espuma de leche</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2100</div>
                     </li>
                     <li class="items">
-                        <img src="imagenes/Flat.webp" alt="Flat">
-                        <div >
+                        <img src="imagenes/Flat.webp" alt="Flat White">
+                        <div>
                             <h4 class="title">Flat White</h4>
-                            <p class="descripcion">Doble shot de espresso y leche, capa fina de espuma.</p>
+                            <p class="descripcion">Doble shot de espresso y leche, capa fina de espuma</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
                         <img src="imagenes/Mocaccino.webp" alt="Moka">
-                        <div >
-                            <h4 class="title">Moccacino</h4>
-                            <p class="descripcion">chocolate, shot de espresso, leche, chocolate rallado.</p>
+                        <div>
+                            <h4 class="title">Mocaccino</h4>
+                            <p class="descripcion">chocolate, shot de espresso, leche, chocolate rallado</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
                         <img src="imagenes/TE.webp" alt="Te">
-                        <div >
+                        <div>
                             <h4 class="title">Té</h4>
                             <p class="descripcion">Consultar opciones</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                 </ul>
             </div>
@@ -86,36 +99,36 @@
                 <h3 class="seccion">Bebidas frías</h3>
                 <ul id="id-productos-frias" class="lista">
                     <li class="items">
-                        <img src="imagenes/Iced-Latte.webp" alt="Ice">
-                        <div >
+                        <img src="imagenes/Iced-Latte.webp" alt="Ice Latte">
+                        <div>
                             <h4 class="title">Ice Latte</h4>
-                            <p class="descripcion">Hielo, short de espresso, leche</p>
+                            <p class="descripcion">Hielo, shot de espresso, leche</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
-                        <img src="imagenes/Frapuccino.webp" alt="Frapuccino">
-                        <div >
-                            <h4 class="title">Frapuccino Caramelo</h4>
-                            <p class="descripcion"> Caramelo, café, leche, hielo</p>
+                        <img src="imagenes/Frapuccino.webp" alt="Frapuccino de Caramelo">
+                        <div>
+                            <h4 class="title">Frapuccino de Caramelo</h4>
+                            <p class="descripcion">Caramelo, café, leche, hielo</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
-                        <img src="imagenes/te-frio.jpg" alt="te-frio" width="100px">
-                        <div >
-                            <h4 class="title">Té frío</h4>
+                        <img src="imagenes/te-frio.jpg" alt="Te Frío" width="100px">
+                        <div>
+                            <h4 class="title">Te Frío</h4>
                             <p class="descripcion"></p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
                         <img src="imagenes/chocolatada.jpg" alt="Chocolatada" width="300px">
-                        <div >
+                        <div>
                             <h4 class="title">Chocolatada</h4>
                             <p class="descripcion"></p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                 </ul>
             </div>
@@ -127,27 +140,27 @@
                 <ul id="id-productos-dulces" class="lista">
                     <li class="items">
                         <img src="imagenes/croissant.jpg" alt="Croissant">
-                        <div >
+                        <div>
                             <h4 class="title">Croissant</h4>
                             <p class="descripcion"></p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
-                        <img src="imagenes/alfajor.jpg" alt="Alfajor">
+                        <img src="imagenes/alfajor.jpg" alt="Alfajor de Maicena">
                         <div>
-                            <h4 class="title">Alfajor de maicena</h4>
+                            <h4 class="title">Alfajor de Maicena</h4>
                             <p class="descripcion"></p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
-                        <img src="imagenes/torta.webp" alt="Torta">
+                        <img src="imagenes/torta.webp" alt="Torta del Día">
                         <div>
-                            <h4 class="title">Torta del dia</h4>
+                            <h4 class="title">Torta del Día</h4>
                             <p class="descripcion">Porción de torta del día</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
                         <img src="imagenes/brownie.webp" alt="Brownie">
@@ -155,7 +168,7 @@
                             <h4 class="title">Brownie</h4>
                             <p class="descripcion"></p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                 </ul>
             </div>
@@ -163,33 +176,34 @@
                 <h3 class="seccion">Saladas</h3>
                 <ul id="id-productos-saladas" class="lista">
                     <li class="items">
-                        <img src="imagenes/avocado.jpg" alt="Avocado">
-                        <div class="box">
-                            <h4 class="title">Avocado toast</h4>
+                        <img src="imagenes/avocado.jpg" alt="Avocado Toast">
+                        <div>
+                            <h4 class="title">Avocado Toast</h4>
                             <p class="descripcion">Pasta de queso crema con sésamo tostado, huevo y palta</p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
-                        <img src="imagenes/tostado.jpg" alt="Tostado">
-                        <div class="box">
-                            <h4 class="title">Tostado de jamón y queso</h4>
+                        <img src="imagenes/tostado.jpg" alt="Tostado de Jamón y Queso">
+                        <div>
+                            <h4 class="title">Tostado de Jamón y Queso</h4>
                             <p class="descripcion"></p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                     <li class="items">
-                        <img src="imagenes/scon.jpg" alt="Scon">
-                        <div class="box">
-                            <h4 class="title">Scon salado</h4>
+                        <img src="imagenes/scon.jpg" alt="Scon Salado">
+                        <div>
+                            <h4 class="title">Scon Salado</h4>
                             <p class="descripcion"></p>
                         </div>
-                        <div class="price">$1500</div>
+                        <div class="price">2000</div>
                     </li>
                 </ul>
             </div>
         </details>
     </main>
+
     <!-- PIE  DE PAGINA-->
     <footer class="footer">
         <span>HORARIOS</span>
